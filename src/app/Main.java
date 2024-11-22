@@ -8,7 +8,7 @@ public class Main {
         DataHandler dataHandler = new DataHandler();
 
         // Обробка масиву даних найменувань товарів
-        String namesOutput = (String) dataHandler.handleData(provider.getProductNames());
+        String namesOutput = dataHandler.handleData(provider.getProductNames());
         getOutput("Products: " + namesOutput);
 
         // Обробка масиву даних про суми продажів
